@@ -54,7 +54,7 @@ Node* getNextNode(Node* current) {
     if(current->previous->previous == NULL) // Check if the previous node is the start node
         return current;
 
-    getNextNode(current->previous);
+    return getNextNode(current->previous);
 }
 
 /**
